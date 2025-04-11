@@ -11,7 +11,7 @@
 <body>
     <!-- The below tag is using Bulma CSS. Try replacing line 14 with line 13. -->
     <!-- <div class="has-text-success-dark is-size-4  has-text-weight-medium"> -->
-    <div>
+    <div class="has-text-success-dark is-size-4  has-text-weight-medium">
         <a href="{{ url_for('home') }}">
             Home
         </a>
@@ -27,7 +27,10 @@
 
     <!-- The below tag is using Bulma CSS. Try replacing line 30 with line 29. -->
     <!-- <div class="content"> -->
-    <div>
+    <div class="content is-large">
+        <h3> 
+            Cat Wiki
+        </h3>
         {% block content %}{{ page_content }}{% endblock %}
     </div>
 
